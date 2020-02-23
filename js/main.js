@@ -9,20 +9,22 @@
 'use strict';
 
 
+
 $(window).on('load', function() {
+	$('a').click(function (e) {
+		e.preventDefault();
+		renderFrontend($(this)[0].pathname, $(this)[0].dataset.name, $(this)[0].dataset.img);
+	})
 	/*------------------
 		Preloder
 	--------------------*/
 	$(".loader").fadeOut(); 
 	$("#preloder").delay(400).fadeOut("slow");
-
-
 	/*------------------
 		Product filter
 	--------------------*/
 	if($('#product-filter').length > 0 ) {
 		var containerEl = document.querySelector('#product-filter');
-		var mixer = mixitup(containerEl);
 	}
 
 });
@@ -75,16 +77,6 @@ $(window).on('load', function() {
 		}).init();
 	}
 
-
-
-	/*------------------
-		ScrollBar
-	--------------------*/
-	$(".cart-table, .product-thumbs").niceScroll({
-		cursorborder:"",
-		cursorcolor:"#afafaf",
-		boxzoom:false
-	});
 
 
 

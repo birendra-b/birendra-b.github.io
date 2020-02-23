@@ -838,6 +838,18 @@ ol {
 	margin-bottom: 30px;
 }
 
+#frontend > div {
+	margin-top: 50px;
+}
+
+.header-section{
+	background-color: #ca7bce;
+}
+
+.hero-section{
+	background-color: #c16fc5;
+}
+
 .blog-item .bi-content .readmore {
 	font-size: 14px;
 	color: #949494;
