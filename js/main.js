@@ -11,10 +11,6 @@
 
 
 $(window).on('load', function() {
-	$('a').click(function (e) {
-		e.preventDefault();
-		renderFrontend($(this)[0].pathname, $(this)[0].dataset.name, $(this)[0].dataset.img);
-	})
 	/*------------------
 		Preloder
 	--------------------*/
@@ -76,8 +72,6 @@ $(window).on('load', function() {
 			clickBar: 1,
 		}).init();
 	}
-
-
 
 
 	/*------------------

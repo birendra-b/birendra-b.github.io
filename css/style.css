@@ -281,7 +281,7 @@ ol {
 	margin: 0 auto;
 	display: block;
 	float: right;
-	margin-right: 450px;
+	float: left;
 }
 
 .main-menu li {
@@ -434,7 +434,7 @@ ol {
 }
 
 .product-item figure img {
-	margin-bottom: 95px;
+	margin-bottom: 15px;
 	height: 250px;
 }
 
@@ -676,7 +676,7 @@ ol {
 }
 
 .product-item figure {
-	margin-bottom: 45px;
+	margin-bottom: 5px;
 	position: relative;
 	overflow: hidden;
 	-webkit-transition: all 0.4s ease 0s;
@@ -877,7 +877,7 @@ ol {
 	text-transform: uppercase;
 	font-weight: 600;
 	color: #fff;
-	margin-bottom: 57px;
+	margin-bottom: 20px;
 	letter-spacing: -0.2px;
 }
 

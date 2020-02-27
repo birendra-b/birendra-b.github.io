@@ -1,5 +1,5 @@
-class Checkout extends Frontend {
-  static render() {
+class Checkout extends MicroFrontend {
+  render() {
     return `<!-- Page -->
     <div class="page-area cart-page spad">
       <div class="container">

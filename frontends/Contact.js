@@ -1,5 +1,5 @@
-class Contact extends Frontend{
-  static render() {
+class Contact extends MicroFrontend {
+  render() {
     return `	<!-- Page -->
     <div class="page-area contact-page">
       <div class="container spad">

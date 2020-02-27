@@ -1,5 +1,9 @@
-class Cart extends Frontend {
-  static render() {
+class Cart extends MicroFrontend {
+  beforeMount() {
+    // get previously saved cart from backend
+  }
+
+  render() {
     return `<!-- Page -->
     <div class="page-area cart-page spad">
       <div class="container">
@@ -90,5 +94,19 @@ class Cart extends Frontend {
       </div>
     </div>
     <!-- Page end -->`
+  }
+
+
+  addItemToCart(){
+  }
+    
+  deleteItemFromCart () {
+  }
+
+  applyCouponToCart() {
+  }
+    
+  onDismount() {
+    // save Cart for the user to get back to afterwards
   }
 }

@@ -1,9 +1,9 @@
 const routes = {
+  '#': Home,
   '': Home,
-  '/': Home,
-  '/home': Home,
-  '/cart': Cart,
-  '/checkout': Checkout,
-  '/product': Product,
-  '/contact': Contact,
+  '#home': Home,
+  '#cart': Cart,
+  '#checkout': Checkout,
+  '#product': Product,
+  '#contact': Contact,
 };

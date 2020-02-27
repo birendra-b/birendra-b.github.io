@@ -1,13 +1,39 @@
-class Product extends Frontend {
-  static render(productName = "Cat Table", productImage = 'img/product/cat-table.jpg') {
-    console.log(productImage);
+class Product extends MicroFrontend {
+  static get productDetails() {
+    return {
+      '1': {
+        name: 'Cat Table',
+        img: 'img/product/cat-table.jpg'
+      },
+      '2': {
+        name: 'Dog House Sofa',
+        img: 'img/product/doghousesofa.jpg'
+      },
+      '3': {
+        name: 'Dog Window',
+        img: 'img/product/dog-window.jpg'
+      },
+      '4': {
+        name: '007 Cat suit',
+        img: 'img/product/suit2.jpg'
+      }
+    }
+  }
+
+  getProductDetails() {
+    var urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('productId');
+    return this.constructor.productDetails[productId];
+  }
+  render() {
+    const product = this.getProductDetails();
     return `	<!-- Page -->
     <div class="page-area product-page spad">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
             <figure>
-              <img class="product-big-img" src="${productImage}" alt="">
+              <img class="product-big-img" src="${product.img}" alt="">
             </figure>
             <div class="product-thumbs">
               <div class="product-thumbs-track">
@@ -20,7 +46,7 @@ class Product extends Frontend {
           </div>
           <div class="col-lg-6">
             <div class="product-content">
-              <h2>${productName}</h2>
+              <h2>${product.name}</h2>
               <div class="pc-meta">
                 <h4 class="price">$19.50</h4>
                 <div class="review">
@@ -105,5 +131,13 @@ class Product extends Frontend {
       </div>
     </div> 
     <!-- Page end -->`
+  }
+
+  selectProductColor(color) {}
+
+  selectProductSize(size) {}
+ 
+  addToCart() {
+    // delegate call to MicroFrontend Cart.addToCart function
   }
 }

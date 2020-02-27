@@ -1,5 +1,5 @@
-class Home extends Frontend {
-  static render() {
+class Home extends MicroFrontend {
+  render() {
     return `<!-- Hero section -->
     <section class="hero-section set-bg">
       <div class="hero-slider owl-carousel">
@@ -30,21 +30,11 @@ class Home extends Frontend {
             <div class="product-item">
               <figure>
                 <img src="img/product/cat-table.jpg" alt="">
-                <div class="pi-meta">
-                  <div class="pi-m-left">
-                    <img src="img/icons/eye.png" alt="">
-                    <p>quick view</p>
-                  </div>
-                  <div class="pi-m-right">
-                    <img src="img/icons/heart.png" alt="">
-                    <p>save</p>
-                  </div>
-                </div>
               </figure>
               <div class="product-info">
                 <h6>Cat Table</h6>
                 <p>$39.90</p>
-                <a href="product" class="site-btn btn-line" data-name='Cat Table' data-img='img/product/cat-table.jpg'>View</a>
+                <a href="?productId=1#product" class="site-btn btn-line" data-name='Cat Table' data-img='img/product/cat-table.jpg'>View</a>
               </div>
             </div>
           </div>
@@ -53,21 +43,11 @@ class Home extends Frontend {
               <figure>
                 <img src="img/product/doghousesofa.jpg" alt="">
                 <div class="bache">NEW</div>
-                <div class="pi-meta">
-                  <div class="pi-m-left">
-                    <img src="img/icons/eye.png" alt="">
-                    <p>quick view</p>
-                  </div>
-                  <div class="pi-m-right">
-                    <img src="img/icons/heart.png" alt="">
-                    <p>save</p>
-                  </div>
-                </div>
               </figure>
               <div class="product-info">
                 <h6>Dog House Sofa</h6>
                 <p>$19.50</p>
-                <a href="product" class="site-btn btn-line" data-name='Dog House Sofa' data-img='img/product/doghousesofa.jpg'>View</a>
+                <a href="?productId=2#product" class="site-btn btn-line" data-name='Dog House Sofa' data-img='img/product/doghousesofa.jpg'>View</a>
               </div>
             </div>
           </div>
@@ -75,21 +55,11 @@ class Home extends Frontend {
             <div class="product-item">
               <figure>
                 <img src="img/product/dog-window.jpg" alt="">
-                <div class="pi-meta">
-                  <div class="pi-m-left">
-                    <img src="img/icons/eye.png" alt="">
-                    <p>quick view</p>
-                  </div>
-                  <div class="pi-m-right">
-                    <img src="img/icons/heart.png" alt="">
-                    <p>save</p>
-                  </div>
-                </div>
               </figure>
               <div class="product-info">
                 <h6>Dog Window</h6>
                 <p>$59.90</p>
-                <a href="product" class="site-btn btn-line" data-name='Dog Window' data-img='img/product/dog-window.jpg'>View</a>
+                <a href="?productId=3#product" class="site-btn btn-line" data-name='Dog Window' data-img='img/product/dog-window.jpg'>View</a>
               </div>
             </div>
           </div>
@@ -98,21 +68,11 @@ class Home extends Frontend {
               <figure>
                 <img src="img/product/suit2.jpg" alt="">
                 <div class="bache sale">SALE</div>
-                <div class="pi-meta">
-                  <div class="pi-m-left">
-                    <img src="img/icons/eye.png" alt="">
-                    <p>quick view</p>
-                  </div>
-                  <div class="pi-m-right">
-                    <img src="img/icons/heart.png" alt="">
-                    <p>save</p>
-                  </div>
-                </div>
               </figure>
               <div class="product-info">
                 <h6>007 Cat suit</h6>
                 <p>$32.20 <span>RRP 64.40</span></p>
-                <a href="product" class="site-btn btn-line"  data-name='007 Suit' data-img='img/product/suit2.jpg'>View</a>
+                <a href="?productId=4#product" class="site-btn btn-line"  data-name='007 Suit' data-img='img/product/suit2.jpg'>View</a>
               </div>
             </div>
           </div>
