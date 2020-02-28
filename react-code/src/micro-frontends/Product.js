@@ -2,26 +2,18 @@ import React from 'react';
 import MicroFrontend from './MicroFrontend';
 
 class Product extends MicroFrontend {
-  render(productName = "Cat Table", productImage = 'img/product/cat-table.jpg') {
+  render() {
     return <div class="page-area product-page spad">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
             <figure>
-              <img class="product-big-img" src={productImage} alt=""></img>
+              <img class="product-big-img" src={''} alt=""></img>
             </figure>
-            <div class="product-thumbs">
-              <div class="product-thumbs-track">
-                <div class="pt" data-imgbigurl="img/product/1.jpg"><img src="img/product/thumb-1.jpg" alt=""></img></div>
-                <div class="pt" data-imgbigurl="img/product/2.jpg"><img src="img/product/thumb-2.jpg" alt=""></img></div>
-                <div class="pt" data-imgbigurl="img/product/3.jpg"><img src="img/product/thumb-3.jpg" alt=""></img></div>
-                <div class="pt" data-imgbigurl="img/product/4.jpg"><img src="img/product/thumb-4.jpg" alt=""></img></div>
-              </div>
-            </div>
           </div>
           <div class="col-lg-6">
             <div class="product-content">
-              <h2>{productName}</h2>
+              <h2>{''}</h2>
               <div class="pc-meta">
                 <h4 class="price">$19.50</h4>
                 <div class="review">

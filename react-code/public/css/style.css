@@ -280,8 +280,7 @@ ol {
 	list-style: none;
 	margin: 0 auto;
 	display: block;
-	float: right;
-	margin-right: 450px;
+	float: left;
 }
 
 .main-menu li {
@@ -434,7 +433,7 @@ ol {
 }
 
 .product-item figure img {
-	margin-bottom: 95px;
+	margin-bottom: 15px;
 	height: 250px;
 }
 
@@ -877,7 +876,7 @@ ol {
 	text-transform: uppercase;
 	font-weight: 600;
 	color: #fff;
-	margin-bottom: 57px;
+	margin-bottom: 7px;
 	letter-spacing: -0.2px;
 }
 

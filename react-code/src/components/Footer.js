@@ -8,7 +8,7 @@ class Footer extends React.Component {
             <div class="row">
               <div class="col-lg-3 col-md-8 col-sm-12">
                 <div class="footer-widget about-widget">
-                  Petish.com
+                  PetStore.com
                   <p>Donec vitae purus nunc. Morbi faucibus erat sit amet congue mattis. Nullam fringilla faucibus urna, id dapibus erat iaculis ut. Integer ac sem.</p>
                 </div>
               </div>
